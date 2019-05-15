@@ -149,10 +149,83 @@ print('')
 tab_b = tab_a
 print(tab_a == tab_b, id(tab_a))
 print(tab_a is tab_b, id(tab_b))
+print('___________________________________________________')
 
-False Values:
-False
-None
-Zero of any numeric type
-Any empty sequence. For example: '', (), []
-Any empty mapping. F
+# False Values:
+# False
+# None
+# Zero of any numeric type
+# Any empty sequence. For example: '', (), []
+# Any empty mapping. For example: {}
+
+condition = False
+if condition:
+    print('True')
+else:
+    print('False')
+print('___________________________________________________')
+
+#Loops
+nums = [1, 2, 3, 4, 5]
+for num in nums:
+    for letter in 'abc':
+        if num == 3:
+            print('found!', letter)
+            continue
+        else:
+            print(num, letter)
+print('___________________________________________________')
+
+for i in range(10):
+    print(i)
+
+x = 0
+while x < 10:
+    if x == 5:
+        print('pienc')
+        x += 1
+    else:
+        print(x)
+        x += 1
+
+#infinite loop
+# while True:
+#     print('a')
+print('___________________________________________________')
+
+#functions
+def hello_func(first_word, name = "wieje"):
+    return '{} {}'.format(first_word, name)
+    
+print(hello_func('skond', 'pizdzi'))
+
+def function_info(*args, **kwargs):
+    print(args)
+    print(kwargs)
+
+function_info('abc', 'cba', name = 'Janusz', age = 44)
+
+cars = ['Seat', 'Fiat']
+info = {'isfast': True, 'seat-s num': 5}
+
+function_info(*cars, **info)
+print('___________________________________________________')
+
+month_days = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+
+def is_leap(year):
+    """Return True for leap years, False for non leap years."""
+    return year % 4 == 0 and (year % 100 != 0 or year % 400 == 0)
+
+print(is_leap(2020))
+
+def days_in_month(year, month):
+    """Return number of days in that year in that month"""
+    if not 1 <= month <= 12:
+        return 'Invalid month!'
+    if month == 2 and is_leap(year):
+        return 29
+    return month_days[month]
+
+print(days_in_month(2020, 2))
+

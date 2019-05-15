@@ -172,8 +172,6 @@ print(cs_courses.intersection(art_courses))
 print(cs_courses.difference(art_courses))
 print(cs_courses.union(art_courses))
 
-print('___________________________________________________')
-
 empty_list = []
 empty_list = list()
 
@@ -181,3 +179,68 @@ empty_tuple = ()
 empty_tuple = tuple()
 
 empty_set = set()
+
+print('___________________________________________________')
+
+# Dictionaries, Key-Value Pairs
+student = {'name':'James', 'age': 25, 'courses': ['Math', 'CompSci'] }
+
+student['car'] = 'Skoda Fabia'
+student['name'] = 'Bartek'
+
+print(student['name'])
+print(student.get('car', 'Not found'))
+
+student.update({'name':'Krystian', 'age':28, 'phone': '555666777'})
+print(student)
+
+age = student.pop('age')
+
+print(student)
+
+print(age)
+print(len(student))
+print(student.keys())
+print(student.values())
+print(student.items())
+
+for key,value in student.items():
+    print(key, value)
+
+
+print('___________________________________________________')
+
+language = 'Python'
+
+if language == 'Java':
+    print('Language is Java')
+elif language == 'Python':
+    print('LAnguage is Python')
+elif language == 'JavaScript':
+    print('LAnguage is JavaScript')
+else:
+    print('No match')
+
+print('___________________________________________________')
+
+user = 'Admin'
+logged_in = True
+
+if user == 'Admin' and logged_in:
+    print('Logged in, on Admin page')
+else:
+    print('Bad credits')
+
+if not logged_in:
+    print('Please log in')
+else:
+    print('You are loged in')
+
+print('___________________________________________________')
+
+a = [1, 2, 3]
+b = [1, 2, 3]
+
+print(a == b)
+
+print('___________________________________________________')
