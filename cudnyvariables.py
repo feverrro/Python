@@ -133,7 +133,7 @@ else:
 
 user = 'admin'
 logged_in = False
-if user == 'admin' and logged_in:
+if user == 'admin' and logged_in:#
     print('admin page')
 elif user == 'admin' and not logged_in:
     print('please log in')
@@ -163,9 +163,11 @@ if condition:
     print('True')
 else:
     print('False')
+    
 print('___________________________________________________')
 
 #Loops
+
 nums = [1, 2, 3, 4, 5]
 for num in nums:
     for letter in 'abc':
@@ -174,6 +176,7 @@ for num in nums:
             continue
         else:
             print(num, letter)
+
 print('___________________________________________________')
 
 for i in range(10):
@@ -191,9 +194,11 @@ while x < 10:
 #infinite loop
 # while True:
 #     print('a')
+
 print('___________________________________________________')
 
 #functions
+
 def hello_func(first_word, name = "wieje"):
     return '{} {}'.format(first_word, name)
     
@@ -209,6 +214,7 @@ cars = ['Seat', 'Fiat']
 info = {'isfast': True, 'seat-s num': 5}
 
 function_info(*cars, **info)
+
 print('___________________________________________________')
 
 month_days = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
@@ -227,5 +233,4 @@ def days_in_month(year, month):
         return 29
     return month_days[month]
 
-print(days_in_month(2020, 2))
-
+print(days_in_month(2019, 12))
