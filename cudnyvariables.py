@@ -118,6 +118,7 @@ for key, value in car.items():
 print('___________________________________________________')
 
 #conditionals and bools
+
 condition = 'amp'
 if condition  == 'amp':
     print('trafiles')

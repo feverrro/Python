@@ -18,7 +18,8 @@ print(sys.executable)
 
 
 # Fibonacci series:
- # the sum of two elements defines the next
+# the sum of two elements defines the next
+
 a, b = 0, 1
 while a <= 34:
   
@@ -62,6 +63,7 @@ for i in range(len(a)):
     print(i, a[i])
 
 seasons = ['Spring', 'Summer', 'Fall', 'Winter']
+
 print(list(enumerate(seasons)))
 
 print(range(10))
@@ -87,6 +89,11 @@ for num in range(2, 10):
 while True:
     pass # Busy-wait for keyboard interrupt(Ctrl + C)
 
+###################################################
 
+print('dda')
 
-      
+nums = [1, 2, 3, 4, 5]
+
+for n in nums:
+    print(n)
